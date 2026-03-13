@@ -30,7 +30,6 @@ architecture rtl of fn_rom is
         to_signed(      0, 18),  -- [   2] a1 = +0.000000
         to_signed( -67526, 18),  -- [   3] a2 = -0.000031
         to_signed(      0, 18),  -- [   4] a3 = +0.000000
-        to_signed( -54543, 18),  -- [   5] b1 = -1.664520
         to_signed(    -60, 18),  -- [   5] b1 = -0.000458
         to_signed(-131012, 18),  -- [   6] b2 = -0.999542
         to_signed(      0, 18)   -- [   7] b3 = +0.000000
