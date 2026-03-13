@@ -91,11 +91,12 @@ always @(posedge clk)
 
 always @(posedge clk)
     stb <= ~U4_O[2] & WE;
-	 
-sc01a #(.CLK_HZ(50_000_000), .ENABLE_RESAMPLER(0)) U14(
+
+VotraxSound #(.CLK_HZ(50_000_000)) U14(
+
     .clk(clk_sys),
     .reset_n(~reset),
-    .p(~DBo[5:0]),
+    .phoneme(~DBo[5:0]),
     .inflection(inflection_reg),
     .stb(stb),
     .ar(U14_AR),
